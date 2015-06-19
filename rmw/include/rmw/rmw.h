@@ -53,7 +53,7 @@ rmw_create_publisher(
   const rosidl_message_type_support_t * type_support,
   const char * topic_name,
   size_t queue_size,
-  const rmw_qos_policy_t qos_policy=RMW_QOS_POLICY_RELIABLE);
+  rmw_qos_policy_t qos_policy=RMW_QOS_POLICY_RELIABLE);
 
 RMW_PUBLIC
 rmw_ret_t
@@ -70,7 +70,7 @@ rmw_create_subscription(
   const rosidl_message_type_support_t * type_support,
   const char * topic_name,
   size_t queue_size,
-  const rmw_qos_policy_t qos_policy=RMW_QOS_POLICY_RELIABLE,
+  rmw_qos_policy_t qos_policy=RMW_QOS_POLICY_RELIABLE,
   bool ignore_local_publications);
 
 RMW_PUBLIC
