@@ -95,8 +95,8 @@ typedef struct RMW_PUBLIC rmw_request_id_t
 } rmw_request_id_t;
 
 enum rmw_qos_policy_t {
-  RELIABLE,
-  BEST_EFFORT
+  RMW_QOS_POLICY_RELIABLE,
+  RMW_QOS_POLICY_BEST_EFFORT
 };
 
 #if __cplusplus
