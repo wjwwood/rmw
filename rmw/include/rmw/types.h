@@ -94,7 +94,8 @@ typedef struct RMW_PUBLIC rmw_request_id_t
   int64_t sequence_number;
 } rmw_request_id_t;
 
-enum rmw_qos_policy_t {
+enum rmw_qos_policy_t
+{
   RMW_QOS_POLICY_RELIABLE,
   RMW_QOS_POLICY_BEST_EFFORT
 };
