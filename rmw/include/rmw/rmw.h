@@ -52,7 +52,6 @@ rmw_create_publisher(
   const rmw_node_t * node,
   const rosidl_message_type_support_t * type_support,
   const char * topic_name,
-  size_t queue_size,
   rmw_qos_policy_t qos_policy = rmw_qos_profile_default);
 
 RMW_PUBLIC
@@ -69,7 +68,6 @@ rmw_create_subscription(
   const rmw_node_t * node,
   const rosidl_message_type_support_t * type_support,
   const char * topic_name,
-  size_t queue_size,
   rmw_qos_policy_t qos_policy = rmw_qos_profile_default,
   bool ignore_local_publications = false);
 

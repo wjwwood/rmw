@@ -123,7 +123,7 @@ const static rmw_qos_policy_t rmw_qos_profile_sensor_data
 const static rmw_qos_policy_t rmw_qos_profile_parameters
 {
   .history = RMW_QOS_POLICY_KEEP_LAST_HISTORY,
-  .depth = 10,
+  .depth = 1000,
   .reliability = RMW_QOS_POLICY_RELIABLE
 };
 
