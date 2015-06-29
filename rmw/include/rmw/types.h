@@ -116,7 +116,7 @@ typedef struct RMW_PUBLIC rmw_qos_policy_t
 const static rmw_qos_policy_t rmw_qos_profile_sensor_data
 {
   .history = RMW_QOS_POLICY_KEEP_LAST_HISTORY,
-  .depth = 10,
+  .depth = 5,
   .reliability = RMW_QOS_POLICY_BEST_EFFORT
 };
 
@@ -128,6 +128,13 @@ const static rmw_qos_policy_t rmw_qos_profile_parameters
 };
 
 const static rmw_qos_policy_t rmw_qos_profile_default
+{
+  .history = RMW_QOS_POLICY_KEEP_ALL_HISTORY,
+  .depth = 10,
+  .reliability = RMW_QOS_POLICY_RELIABLE
+};
+
+const static rmw_qos_policy_t rmw_qos_services_default
 {
   .history = RMW_QOS_POLICY_KEEP_ALL_HISTORY,
   .depth = 10,
