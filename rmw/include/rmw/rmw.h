@@ -152,6 +152,32 @@ rmw_wait(
   rmw_clients_t * clients,
   bool non_blocking);
 
+RMW_PUBLIC
+rmw_ret_t
+rmw_get_topics(
+  const rmw_node_t * node,
+  rmw_topic_names_t * topic_names);
+
+RMW_PUBLIC
+char *
+rmw_get_type_name(
+  const rmw_node_t * node,
+  const char * topic_name);
+
+RMW_PUBLIC
+rmw_ret_t
+rmw_count_publishers(
+  const rmw_node_t * node,
+  const char * topic_name,
+  size_t * count);
+
+RMW_PUBLIC
+rmw_ret_t
+rmw_count_subscribers(
+  const rmw_node_t * node,
+  const char * topic_name,
+  size_t * count);
+
 #if __cplusplus
 }
 #endif

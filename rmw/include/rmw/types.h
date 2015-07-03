@@ -94,6 +94,12 @@ typedef struct RMW_PUBLIC rmw_request_id_t
   int64_t sequence_number;
 } rmw_request_id_t;
 
+typedef struct RMW_PUBLIC rmw_topic_names_t
+{
+  unsigned long topic_name_count;
+  char ** topic_names;
+} rmw_topic_names_t;
+
 #if __cplusplus
 }
 #endif
