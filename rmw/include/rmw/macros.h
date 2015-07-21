@@ -21,4 +21,6 @@
   #define RMW_THREAD_LOCAL __thread
 #endif
 
+#define RMW_STR(x) #x
+
 #endif  // RMW_RMW_MACROS_H_
